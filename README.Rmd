@@ -1,0 +1,42 @@
+---
+output: github_document
+bibliography: auryn.bib
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+# auryn
+[![Travis build status](https://travis-ci.org/sflippl/auryn.svg?branch=master)](https://travis-ci.org/sflippl/auryn)
+[![Coverage status](https://codecov.io/gh/sflippl/auryn/branch/master/graph/badge.svg)](https://codecov.io/github/sflippl/auryn?branch=master)
+
+auryn will eventually provide an accessible API to the C++ library auryn, which is dedicated to the fast simulation of neural networks with synaptic plasticity [@Zenke2014]. It is currently under development.
+
+## Installation
+
+auryn can be installed from github via
+
+```{r eval = FALSE}
+# install.packages("devtools")
+devtools::install_github("sflippl/auryn")
+```
+
+## Development
+
+auryn is currently at the beginning of its development. At the moment, it only consists of a reader for files with a .ras extension as the C++ library uses this format to save its output. As an example, you can read in some sample data which has been created using the first example in the [quick start](http://www.fzenke.net/auryn/doku.php?id=quick_start):
+
+```{r}
+library(auryn)
+read_ras("inst/extdata/poisson.0.ras")
+```
+
+The next implemented features will include visualization before going on to more fundamental questions.
+
+# References
