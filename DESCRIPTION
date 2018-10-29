@@ -1,0 +1,23 @@
+Package: auryn
+Type: Package
+Title: Provides an API to the auryn library
+Version: 0.0.0.999
+Author: Samuel Lippl
+Maintainer: Samuel Lippl <sfc.lippl@gmail.com>
+Description: The auryn library (https://github.com/fzenke/auryn) simulates 
+    spiking neural networks with synaptic plasticity. It is written in C++ and 
+    its usage requires specification of a compiled program. This package aims to
+    make auryn more accessible to non-programmers by providing service functions
+    and exposing as much of its functionality in an accessible R interface as 
+    possible.
+License: GPL-3
+Encoding: UTF-8
+LazyData: true
+Imports: 
+    readr,
+    magrittr,
+    assertthat
+Suggests: 
+    testthat
+RoxygenNote: 6.1.0
+Roxygen: list(markdown = TRUE)
